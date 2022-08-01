@@ -4,6 +4,7 @@ if(!isset($_SESSION['user'])){
    header("location: login.php");
 }else{
    $name = $_SESSION['user'][2];
+   $cash = $_SESSION['user'][3];
 }
 ?>
 <!DOCTYPE html>
@@ -21,10 +22,7 @@ if(!isset($_SESSION['user'])){
          <img src="avatar.png">
       </div>
       <div class="welcomeMessage">
-         Hallo <b><?php echo $name ?></b>, welcome to my website
-      </div>
-      <div class="notes">
-         You can modify this page by editing the file 'dashboard.php'
+      <b><?php echo $name ?></b> <strong> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Cash $<?php echo $cash ?></strong>
       </div>
       <a href="logout.php">Logout</a>
 </body>

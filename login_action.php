@@ -1,5 +1,6 @@
 <?php
 session_start();
+<meta http-equiv="refresh" content="30">
 
 $url = "https://script.google.com/macros/s/AKfycbzeevSPBy_TH44mMzq7opfPM8nYoSIF0joKzzgmc62khjQKMDnpo3ghbfJi5HCs_i8s/exec";
 $postData = [
